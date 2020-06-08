@@ -1,0 +1,39 @@
+.mainCont{
+    width: 100%;
+    margin-left: 3%;
+}
+
+.mainCont .heading p{
+    font-size: 21px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: blue;
+    text-align: center;
+    margin: 2% 0;
+}
+
+.mainCont .body{
+    display: block;
+}
+
+.mainCont .body .firstR {
+    display: flex;
+}
+
+.mainCont .body .firstR .listItem{
+    margin: 1% .5% ;
+    width: 30%;
+}
+.mainCont .body .secondR{
+    display: flex;
+}
+
+.mainCont .body .secondR .listItem{
+    margin:1% .5%;
+    width: 30%;
+}
+
+#leftCss{
+    margin-left: 4%;
+}

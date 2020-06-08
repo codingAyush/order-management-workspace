@@ -1,0 +1,16 @@
+.mainCont{
+    width: 100;
+    text-align: center;
+}
+.mainCont p{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+.mainCont button{
+    background-color: green;
+    color: white;
+    height: 21px;
+    border-radius: 5px;
+    width: max-content;
+}

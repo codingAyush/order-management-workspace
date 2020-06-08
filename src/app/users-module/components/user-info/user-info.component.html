@@ -1,0 +1,20 @@
+<div class="mainCont">
+<div class="heading">
+    <p>User Info</p>
+</div>
+<div class="body">
+<div class="userInfo">
+   <div class="infoItem"><p>Name:</p><p>{{name}}</p></div>
+   <div class="infoItem"><p>Phone:</p><p>{{phone}}</p></div>
+   <div class="infoItem"><p>Email:</p><p>{{email}}</p></div>
+   <div class="infoItem"><p>Address:</p><p>{{address}}</p></div>
+   <div class="infoItem"><p>Pincode:</p><p>{{pincode}}</p></div>
+   <div class="infoItem"><p>State:</p><p>{{state}}</p></div>
+   <div class="infoItem"><p>District:</p><p>{{district}}</p></div>
+
+</div>
+<div class="userLoc">
+   <app-location-detect [location]="coordinate" ></app-location-detect>
+</div>
+</div>
+</div>

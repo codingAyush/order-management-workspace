@@ -1,0 +1,19 @@
+.mainContainer{
+    display: flex;
+    width: 100%;
+    background-color: steelblue;
+}
+
+.mainContainer p{
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    height: 28px;
+    padding-top: 13px;
+    font-weight: bold;
+}
+.mainContainer p:first-child{
+    padding-left: 5%;
+}

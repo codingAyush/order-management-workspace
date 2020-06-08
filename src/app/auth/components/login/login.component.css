@@ -1,0 +1,50 @@
+
+.mainCont{
+    width: 34%;
+    margin-left: 32%;;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    align-content: center;
+    text-align: center;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mainCont .heading p{
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 9%;
+    color: blue;
+}
+
+
+.mainCont input{
+    width: 71%;
+    height: 36px;
+    border: solid 0.5px lightgrey;
+    border-bottom: solid 1px forestgreen;
+    border-left: solid 1px forestgreen;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+
+.mainCont button{
+    width: 83px;
+    height: 33px;
+    background-color: forestgreen;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.error{
+    color: red;
+}
+.mainCont button:disabled{
+    background-color: grey;
+}

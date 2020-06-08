@@ -1,0 +1,56 @@
+.mainCont{
+    width: 96%;
+    margin-left:2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 2%;
+   }
+
+   .mainCont .heading p{
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    text-align: center;
+    margin-bottom: 1%;
+   }
+   
+
+   .mainCont .body{
+       display: flex;
+   }
+
+   .mainCont .userInfo{
+       width: 78%;
+        box-sizing: border-box;
+        /* box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12); */
+   }
+
+   .mainCont .userInfo .infoItem{
+       width: 100%;
+       display: flex;
+   }
+   .mainCont .userInfo .infoItem p:first-child{
+       width: 40%;
+       font-weight: bold;
+       /* text-align: right; */
+       text-align: center;
+   }
+
+   .mainCont .userInfo .infoItem p:nth-child(even){
+        width: 60%;
+        text-align: left;
+   }
+
+   .mainCont .userLoc{
+       /* width: 56%; */
+       text-align: right;
+       padding-right: 15px;
+   }
+
+   .mainCont .userLoc.mapsCss{
+    height: 400px;
+    width: 400px;
+   }

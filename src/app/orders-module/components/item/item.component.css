@@ -1,0 +1,19 @@
+.mainCont{
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+    text-align: center;
+    padding-bottom: 2%;
+    
+}
+.mainCont p{
+    color: darkgrey;
+}
+
+.mainCont button{
+    background-color: orange;
+    color: white;
+    outline: none;
+    height: 21px;
+
+}

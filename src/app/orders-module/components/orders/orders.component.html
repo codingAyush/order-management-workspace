@@ -1,0 +1,24 @@
+
+<div class="mainCont">
+    <div class="heading">
+        <p>Orders Summary</p>
+     </div>
+
+     <div class="body" *ngFor='let order of orders'>
+         <div class="leftCont">
+            <img src='./assets/images/mi-band.jpg' alt="item-image" style="width: 200px;height: 150px;"/>
+         </div>
+         <div class="middleCont">
+           <div class="orderSum"> <p> Item Name: </p><p>{{order?.itemName}}</p></div>
+           <div class="orderSum"> <p>Quantity:</p><p> {{order?.quantity}}</p></div>
+           <div class="orderSum"> <p>Sold To:</p><p> {{order?.soldTo}}</p></div>
+           <div class="orderSum"> <p> Sold By:</p><p> {{order?.soldBy}}</p></div>
+           <div class="orderSum"> <p>Delivered on :</p><p> {{order.deliveredOn}}</p></div>
+
+         </div>
+         <div class="rightCont">
+             <p><span >Price:</span><span>$2000</span></p>
+         </div>
+      </div>
+
+</div>

@@ -1,0 +1,58 @@
+.mainCont{
+    width: 100%;
+    display: block;
+}
+
+.mainCont .heading p{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: blue;
+    margin-top: 2%;
+}
+
+.mainCont .body{
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 80%;
+    display: flex;
+    box-sizing: border-box;
+     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.mainCont .body .middleCont{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.mainCont .body .middleCont .orderSum p:first-child{
+    width: 50%;
+    margin:1% 0;
+    color: black;
+    text-align: right;
+}
+.mainCont .body .middleCont .orderSum p:nth-child(even){
+    width: 50%;
+    margin:1% 0;
+    color: grey;
+}
+
+.middleCont .orderSum{
+    display: flex;
+}
+
+.mainCont .body .rightCont{
+    text-align: right;
+    width: 100%;
+    padding-right: 9px;
+    padding-top:9px
+}
+
+.mainCont .body .rightCont span:first-child{
+    color: red;
+}
+

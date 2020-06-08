@@ -1,0 +1,138 @@
+<div class="mainCont">
+    <div class="heading">
+        <p>Add User</p>
+        </div>
+<form [formGroup]='userForm' (ngSubmit)="userInfoSubmit()">
+    <!-- for name -->
+    <div class="form-group">
+    <!-- <label>Name: </label> -->
+    <input type='text' autocomplete="off"  
+        formControlName='name' placeholder="enter your name"/>
+
+    <div *ngIf="userForm.controls.name.invalid && (userForm.controls.name.dirty || userForm.controls.name.touched)">
+
+    <div *ngIf="userForm.controls.name.errors.required" class="error">
+        Name is required.
+    </div>
+    <!-- <div *ngIf="name.errors.minlength">
+        Name must be at least 4 characters long.
+    </div> -->
+   
+
+    </div>
+    </div>
+
+    <!-- for phone -->
+    <div class="form-group">
+        <!-- <label>Phone: </label> -->
+        <input type='text' autocomplete="off"  
+            formControlName='phone' placeholder="enter your phone"/>
+    
+        <div *ngIf="userForm.controls.phone.invalid && (userForm.controls.phone.dirty || userForm.controls.phone.touched)">
+    
+        <div *ngIf="userForm.controls.phone.errors.required" class="error">
+            Phone  is required.
+        </div>
+        <div *ngIf="userForm.controls.phone.errors.minlength" class="error">
+            Name must be at least 10 characters long.
+        </div>
+       
+    
+        </div>
+        </div>
+
+    <!-- for email -->
+    <div class="form-group">
+        <!-- <label>Email: </label> -->
+        <input type='email' autocomplete="off"  
+            formControlName='email' placeholder="enter your email"/>
+    
+        <div *ngIf="userForm.controls.email.invalid && (userForm.controls.email.dirty || userForm.controls.email.touched)">
+    
+        <div *ngIf="userForm.controls.email.errors.required" class="error">
+            
+            Email  is required.
+        </div>
+        <div class="error" *ngIf="userForm.controls.email.errors.pattern"> 
+            Please provide valid email
+        </div>
+        </div>
+        </div> 
+
+     <!-- for address -->
+    <div class="form-group">
+    <!-- <label>Address: </label> -->
+    <input type='text' autocomplete="off"  
+        formControlName='address' placeholder="enter your address"/>
+
+    <div *ngIf="userForm.controls.address.invalid && (userForm.controls.address.dirty || userForm.controls.address.touched)">
+
+    <div *ngIf="userForm.controls.address.errors.required" class="error">
+        Address is required.
+    </div>
+    </div>
+    </div>
+
+     <!-- for pincode -->
+    <div class="form-group">
+    <!-- <label>Pincode: </label> -->
+    <input type='number' autocomplete="off"  
+        formControlName='pincode' placeholder="enter  pincode"/>
+
+    <div *ngIf="userForm.controls.pincode.invalid && (userForm.controls.pincode.dirty || userForm.controls.pincode.touched)">
+
+    <div *ngIf="userForm.controls.pincode.errors.required" class="error">
+        Pincode is required.
+    </div>
+    <!-- <div *ngIf="name.errors.minlength">
+        Name must be at least 4 characters long.
+    </div> -->
+   
+
+    </div>
+    </div>
+
+     <!-- for state -->
+    <div class="form-group">
+    <!-- <label>State: </label> -->
+    <input type='text' autocomplete="off"  
+        formControlName='state' placeholder="enter your state"/>
+
+    <div *ngIf="userForm.controls.state.invalid && (userForm.controls.state.dirty || userForm.controls.state.touched)">
+
+    <div *ngIf="userForm.controls.state.errors.required" class="error">
+        State is required.
+    </div>
+    <!-- <div *ngIf="name.errors.minlength">
+        Name must be at least 4 characters long.
+    </div> -->
+   
+
+    </div>
+    </div>
+
+     <!-- for district -->
+    <div class="form-group">
+    <!-- <label>District: </label> -->
+    <input type='text' autocomplete="off"  
+        formControlName='district' placeholder="enter your district"/>
+
+    <div *ngIf="userForm.controls.district.invalid && (userForm.controls.district.dirty || userForm.controls.district.touched)">
+
+    <div *ngIf="userForm.controls.district.errors.required" class="error">
+        District is required.
+    </div>
+    <!-- <div *ngIf="name.errors.minlength">
+        Name must be at least 4 characters long.
+    </div> -->
+   
+
+    </div>
+    </div>
+
+    <div class="form-group">
+       <button type="submit" [disabled]='userForm.invalid'>Register</button>
+     </div>
+
+</form>
+</div>
