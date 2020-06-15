@@ -70,7 +70,7 @@ export class UserListComponent implements OnInit {
   orderItem(element):void{
     if(this.authSer.isAuthenticated){
        const queryData=this.getUserParams(element);
-       this.router.navigate(['/itemList'],{queryParams:queryData});
+       this.router.navigate(['/orders/itemList'],{queryParams:queryData});
     }else{
       this.openDialog();
     }

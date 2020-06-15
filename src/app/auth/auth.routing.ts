@@ -3,7 +3,7 @@ import { LoginComponent } from './components/login/login.component';
 
 
 const authRoutes:Routes=[
-    {path:'login', component:LoginComponent}
+    {path:'', component:LoginComponent}
 ];
 
 export const authRouting=RouterModule.forChild(authRoutes);

@@ -3,7 +3,7 @@ import { OrdersComponent } from './components/orders/orders.component';
 import { ItemListComponent } from './containers/item-list/item-list.component';
 
 const orderRoutes:Routes=[ 
-    { path:'orders', component:OrdersComponent} ,
+    { path:'', component:OrdersComponent} ,
     {path:'itemList', component:ItemListComponent}
 ];
 
